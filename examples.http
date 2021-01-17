@@ -1,0 +1,49 @@
+@local = http://localhost:8181
+
+
+POST  {{local}}/api/users/create
+Content-Type: application/json
+
+{
+  "firstName": "tomer",
+  "lastName": "alayof",
+  "age": "8",
+  "gender": "man",
+  "tandcs": false,
+  "email": "tomeralayof959595959595959599@gmail.com"
+}
+
+
+
+### get all users
+GET {{local}}/api/users
+Content-Type: application/json
+
+
+
+###
+GET {{local}}/api/users/600394cc8b9166759ca12693
+Content-Type: application/json
+
+
+### update existing user
+PUT {{local}}/api/users/600394cc8b9166759ca12693
+Content-Type: application/json
+
+{
+  "firstName": "aviel Atias",
+  "lastName": "alayof",
+  "age": "8",
+  "gender": "man",
+  "tandcs": false,
+  "email": "tomeralayof959595959595959599@gmail.com"
+}
+
+### delele my user by query param
+DELETE {{local}}/api/users/600394f878fe2450ccd43312
+Content-Type: application/json
+
+
+
+
+
